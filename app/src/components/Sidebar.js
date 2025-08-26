@@ -2,7 +2,7 @@ import React from "react";
 
 function App() {
   return (
-    <div className="w-full py-12 font-sans bg-white">
+    <div className="max-w-7xl mx-auto px-6 py-12 font-sans bg-white">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12 w-full px-4 md:px-8">
         <div className="text-5xl font-extrabold text-[#E80000] cursor-pointer whitespace-nowrap">
