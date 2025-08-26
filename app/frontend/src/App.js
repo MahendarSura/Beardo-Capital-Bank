@@ -1,5 +1,4 @@
 import React from "react";
-import ServicesSection from "./ServicesSection";
 
 function App() {
   return (
