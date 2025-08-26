@@ -79,10 +79,10 @@ function App() {
         </div>
       </section>
 
-      {/* ===== SERVICES SECTION (added here) ===== */}
+      {/* ===== SERVICES SECTION ===== */}
       <section className="bg-gradient-to-r from-red-700 to-red-600 py-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 items-center">
-          {/* Left Side - Heading */}
+          {/* Left Side */}
           <div>
             <h2 className="text-4xl font-bold text-white mb-4">
               Truth, Trust, Transparency <br /> of Beardo Capital Bank
@@ -116,7 +116,7 @@ function App() {
             </div>
           </div>
 
-          {/* Right Side - Offers */}
+          {/* Right Side */}
           <div className="grid gap-6">
             {[
               {
@@ -136,10 +136,7 @@ function App() {
                 desc: "Drive your new car with 100% on-road funding",
               },
             ].map((offer, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-2xl shadow-lg p-6"
-              >
+              <div key={i} className="bg-white rounded-2xl shadow-lg p-6">
                 <h3 className="text-xl font-semibold">{offer.title}</h3>
                 <p className="text-gray-600">{offer.desc}</p>
                 <div className="flex gap-4 mt-4">
