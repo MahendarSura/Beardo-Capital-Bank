@@ -165,6 +165,148 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* ===== SERVICE REQUEST BOX ===== */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-white rounded-2xl shadow-lg p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {[
+              { icon: "🔑", text: "Password" },
+              { icon: "📄", text: "Track Applications / Service Requests" },
+              { icon: "🔒", text: "Smart Lock" },
+              { icon: "💳", text: "Block Card" },
+              { icon: "⚠️", text: "Report Fraud" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center gap-2 cursor-pointer"
+              >
+                <span className="text-3xl">{item.icon}</span>
+                <p className="font-medium text-gray-700">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TRUSTWORTHY BANKING TEXT ===== */}
+      <section className="bg-white text-center py-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          Trustworthy Banking
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Experience transparent and seamless banking with security at every
+          step.
+        </p>
+      </section>
+
+      {/* ===== CREDIT CARDS SECTION ===== */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            Choose Your Credit Card
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sapphiro",
+                tag: "Hot Selling",
+                bestFor: "Premium Lifestyle Offers",
+                perks: "Lounge Access | Golf Rounds | BookMyShow Offers more",
+              },
+              {
+                name: "Rubyx",
+                tag: "Exclusive Rewards",
+                bestFor: "High-End Lifestyle Perks",
+                perks:
+                  "Welcome vouchers | Complimentary Golf rounds | Lounge access more",
+              },
+              {
+                name: "Coral",
+                tag: "Popular",
+                bestFor: "Everyday or On-The-Go Spends",
+                perks: "Lounge access | BookMyShow offers | INOX offers more",
+              },
+            ].map((card, i) => (
+              <div key={i} className="bg-white rounded-2xl shadow-lg p-6">
+                <img
+                  src="https://img.freepik.com/free-vector/realistic-credit-card-design_23-2149125085.jpg"
+                  alt={card.name}
+                  className="rounded-lg mb-4"
+                />
+                <span className="text-red-600 font-semibold">{card.tag}</span>
+                <h3 className="text-xl font-bold">{card.name}</h3>
+                <p className="text-gray-600 mt-2">BEST FOR</p>
+                <p className="font-medium">{card.bestFor}</p>
+                <p className="text-gray-600 mt-1">{card.perks}</p>
+                <div className="flex gap-4 mt-4">
+                  <button className="bg-red-600 text-white px-4 py-2 rounded-lg">
+                    APPLY
+                  </button>
+                  <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">
+                    DETAILS
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <button className="text-red-600 font-semibold hover:underline">
+              EXPLORE ALL CREDIT CARDS
+            </button>
+            <p className="text-gray-600 mt-2">
+              Looking for a Business card?{" "}
+              <span className="text-red-600 cursor-pointer">VIEW</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FOOTER ===== */}
+      <footer className="bg-gray-100 text-gray-700 py-12 mt-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-bold mb-4">Contact Us</h3>
+            <p>📞 1800 1080</p>
+            <p className="mt-2 cursor-pointer hover:underline">Locate Us</p>
+            <p className="cursor-pointer hover:underline">
+              Find Branches & ATMs near you
+            </p>
+          </div>
+          <div>
+            <h3 className="font-bold mb-4">Customer Service</h3>
+            <ul className="space-y-2">
+              <li>Contact Us</li>
+              <li>Customer Care</li>
+              <li>Report Unauthorized Transactions</li>
+              <li>Raise a Service Request</li>
+              <li>Complaints & Grievances</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-4">Explore</h3>
+            <ul className="space-y-2">
+              <li>Interest Rates</li>
+              <li>Service Charges and Fees</li>
+              <li>FAQs</li>
+              <li>Career Opportunities</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-4">Ways to Bank</h3>
+            <ul className="space-y-2">
+              <li>Digital Banking</li>
+              <li>Mobile Banking</li>
+              <li>Internet Banking</li>
+              <li>ATMs and Branches</li>
+            </ul>
+          </div>
+        </div>
+        <div className="text-center mt-8 text-sm text-gray-500">
+          © 2025 Beardo Capital Bank. All Rights Reserved.
+        </div>
+      </footer>
     </div>
   );
 }
