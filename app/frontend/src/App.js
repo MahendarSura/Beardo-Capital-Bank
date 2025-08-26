@@ -2,12 +2,14 @@ import React from "react";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 font-sans bg-white">
+    <div className="max-w-7xl mx-auto px-4 py-12 font-sans bg-white">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
         <div className="text-5xl font-extrabold text-[#E80000] cursor-pointer">
           Beardo Capital Bank
         </div>
+
+        {/* Menu */}
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
           <li className="hover:text-[#E80000] cursor-pointer">Explore Products</li>
           <li className="hover:text-[#E80000] cursor-pointer">Grab Deal</li>
@@ -22,13 +24,15 @@ function App() {
           <li className="hover:text-[#E80000] cursor-pointer">Special Services</li>
           <li className="hover:text-[#E80000] cursor-pointer">Knowledge Hub</li>
         </ul>
-        <div className="text-[#E80000] font-semibold cursor-pointer hover:underline">
+
+        {/* Login/Signup - always visible on right */}
+        <div className="text-[#E80000] font-semibold cursor-pointer hover:underline whitespace-nowrap">
           Login / Signup
         </div>
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center px-10 text-white my-16 w-full rounded-lg shadow-lg">
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center px-6 text-white my-16 w-full rounded-lg shadow-lg">
         <div className="w-full flex flex-col md:flex-row items-center gap-10">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
