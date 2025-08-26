@@ -1,36 +1,35 @@
 import React from "react";
 
-function Navbar() {
+function App() {
   return (
-    <nav className="w-full bg-[#E80000] text-white px-6 py-4 flex items-center justify-between max-w-[1280px] mx-auto">
-      {/* Left Side: Logo/Title */}
-      <div className="text-3xl font-extrabold cursor-pointer">Beardo Capital Bank</div>
-
-      {/* Center Menu - hidden on small screens */}
-      <ul className="hidden md:flex space-x-8 font-semibold">
-        <li className="hover:underline cursor-pointer">Explore Products</li>
-        <li className="hover:underline cursor-pointer">Grab Deal</li>
-        <li className="hover:underline cursor-pointer">Make Payments</li>
-        <li className="hover:underline cursor-pointer">Bank Smart</li>
-        <li className="hover:underline cursor-pointer">Accounts</li>
-        <li className="hover:underline cursor-pointer">Deposits</li>
-        <li className="hover:underline cursor-pointer">Cards</li>
-        <li className="hover:underline cursor-pointer">Loans</li>
-        <li className="hover:underline cursor-pointer">Investments</li>
-        <li className="hover:underline cursor-pointer">Insurance</li>
-        <li className="hover:underline cursor-pointer">Special Services</li>
-        <li className="hover:underline cursor-pointer">Knowledge Hub</li>
-      </ul>
-
-      {/* Right Side: Login/Signup */}
-      <div className="font-semibold cursor-pointer hover:underline whitespace-nowrap">
-        Login / Signup
-      </div>
-    </nav>
+    <div className="max-w-7xl mx-auto px-6 py-12 font-sans bg-white">
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between mb-12">
+        <div className="text-5xl font-extrabold text-[#E80000] cursor-pointer">
+          Beardo Capital Bank
+        </div>
+        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
+          <li className="hover:text-[#E80000] cursor-pointer">Explore Products</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Grab Deal</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Make Payments</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Bank Smart</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Accounts</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Deposits</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Cards</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Loans</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Investments</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Insurance</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Special Services</li>
+          <li className="hover:text-[#E80000] cursor-pointer">Knowledge Hub</li>
+        </ul>
+        <div className="text-[#E80000] font-semibold cursor-pointer hover:underline">
+          Login / Signup
+        </div>
+      </nav>
 
       {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center text-white my-16 w-full">
-        <div className="w-full flex flex-col md:flex-row items-center gap-10 px-4 md:px-8">
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center px-10 text-white my-16 w-full rounded-lg shadow-lg">
+        <div className="w-full flex flex-col md:flex-row items-center gap-10">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
             <p className="text-xl max-w-xl">
@@ -56,7 +55,7 @@ function Navbar() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="bg-white shadow rounded-md w-full grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 px-4 md:px-8">
+      <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
         {[
           { icon: "🏦", title: "Accounts", text: "Savings accounts, checking accounts, debit cards & more." },
           { icon: "💳", title: "Credit Cards", text: "Credit cards with attractive rewards and benefits." },
@@ -72,7 +71,7 @@ function Navbar() {
       </section>
 
       {/* OFFERS SECTION */}
-      <section className="bg-white shadow rounded-md w-full mb-16 px-4 md:px-8 py-10">
+      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
         <div className="text-center space-y-8">
           <h2 className="text-4xl font-extrabold text-[#E80000]">Offers for You!</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
@@ -109,10 +108,10 @@ function Navbar() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="bg-white shadow rounded-md w-full mb-16 px-4 md:px-8 py-10">
+      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
         <div className="text-center space-y-10">
           <h2 className="text-4xl font-extrabold text-[#E80000]">What Our Customers Say</h2>
-          <div className="space-y-10 max-w-7xl mx-auto">
+          <div className="space-y-10">
             {[
               {
                 img: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -130,7 +129,7 @@ function Navbar() {
                 comment: "Investments made simple! The advice and tools helped me grow my portfolio confidently.",
               },
             ].map((person, i) => (
-              <div key={i} className="bg-gray-50 p-8 rounded shadow text-left border border-gray-200 max-w-xl mx-auto">
+              <div key={i} className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
                 <div className="flex items-center mb-4 space-x-4">
                   <img src={person.img} alt={person.name} className="w-16 h-16 rounded-full object-cover" />
                   <h3 className="text-xl font-semibold text-[#E80000]">{person.name}</h3>
