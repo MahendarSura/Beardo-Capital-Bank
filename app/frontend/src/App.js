@@ -1,7 +1,5 @@
 import React from "react";
 
-import React from "react";
-
 function App() {
   return (
     <div className="max-w-full font-sans bg-white">
