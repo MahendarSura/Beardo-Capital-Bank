@@ -49,8 +49,9 @@ function App() {
       </div>
 
       {/* ===== HERO SECTION ===== */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center px-6 text-white my-12 w-full shadow-lg">
+      <section className="relative h-[520px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center px-6 text-white my-12 w-full shadow-lg">
         <div className="w-full flex flex-col md:flex-row items-center gap-10">
+          {/* Left Side */}
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl font-extrabold">
               Reimagining Banking for You
@@ -68,12 +69,25 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="flex-1 hidden md:block">
-            <img
-              src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=800&q=80"
-              alt="Digital Banking"
-              className="rounded shadow-xl"
-            />
+
+          {/* Right Side - Home Loan Promo */}
+          <div className="flex-1 hidden md:flex items-center justify-center">
+            <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 max-w-sm">
+              <img
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+                alt="Home Loan"
+                className="rounded-lg shadow-md mb-4"
+              />
+              <h3 className="text-2xl font-bold text-[#A60000]">
+                Your dream home, your pride
+              </h3>
+              <p className="text-gray-600 mt-2">
+                Turn your dream into reality with Beardo Capital Bank Home Loan
+              </p>
+              <button className="mt-4 bg-red-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-red-700">
+                Apply Now
+              </button>
+            </div>
           </div>
         </div>
       </section>
