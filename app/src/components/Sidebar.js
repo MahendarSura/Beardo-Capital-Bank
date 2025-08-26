@@ -1,31 +1,32 @@
 import React from "react";
 
-function App() {
+function Navbar() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-12 font-sans bg-white">
-      {/* NAVBAR */}
-      <nav className="flex items-center justify-between mb-12 w-full px-4 md:px-8">
-        <div className="text-5xl font-extrabold text-[#E80000] cursor-pointer whitespace-nowrap">
-          Beardo Capital Bank
-        </div>
-        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
-          <li className="hover:text-[#E80000] cursor-pointer">Explore Products</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Grab Deal</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Make Payments</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Bank Smart</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Accounts</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Deposits</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Cards</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Loans</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Investments</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Insurance</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Special Services</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Knowledge Hub</li>
-        </ul>
-        <div className="text-[#E80000] font-semibold cursor-pointer hover:underline whitespace-nowrap">
-          Login / Signup
-        </div>
-      </nav>
+    <nav className="w-full bg-[#E80000] text-white px-6 py-4 flex items-center justify-between max-w-[1280px] mx-auto">
+      {/* Left Side: Logo/Title */}
+      <div className="text-3xl font-extrabold cursor-pointer">Beardo Capital Bank</div>
+
+      {/* Center Menu - hidden on small screens */}
+      <ul className="hidden md:flex space-x-8 font-semibold">
+        <li className="hover:underline cursor-pointer">Explore Products</li>
+        <li className="hover:underline cursor-pointer">Grab Deal</li>
+        <li className="hover:underline cursor-pointer">Make Payments</li>
+        <li className="hover:underline cursor-pointer">Bank Smart</li>
+        <li className="hover:underline cursor-pointer">Accounts</li>
+        <li className="hover:underline cursor-pointer">Deposits</li>
+        <li className="hover:underline cursor-pointer">Cards</li>
+        <li className="hover:underline cursor-pointer">Loans</li>
+        <li className="hover:underline cursor-pointer">Investments</li>
+        <li className="hover:underline cursor-pointer">Insurance</li>
+        <li className="hover:underline cursor-pointer">Special Services</li>
+        <li className="hover:underline cursor-pointer">Knowledge Hub</li>
+      </ul>
+
+      {/* Right Side: Login/Signup */}
+      <div className="font-semibold cursor-pointer hover:underline whitespace-nowrap">
+        Login / Signup
+      </div>
+    </nav>
 
       {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-[#E80000] to-[#B00000] flex items-center text-white my-16 w-full">
