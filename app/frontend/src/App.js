@@ -1,4 +1,5 @@
 import React from "react";
+import ServicesSection from "./ServicesSection";
 
 function App() {
   return (
@@ -6,12 +7,10 @@ function App() {
       {/* ===== TOP RED STRIP ===== */}
       <header className="bg-[#A60000] text-white w-full">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-          {/* Bank Name */}
           <div className="text-xl md:text-2xl font-bold cursor-pointer">
             Beardo Capital Bank
           </div>
 
-          {/* Menu */}
           <ul className="hidden md:flex space-x-6 font-medium text-sm">
             <li className="cursor-pointer hover:underline">Personal</li>
             <li className="cursor-pointer hover:underline">Business</li>
@@ -19,10 +18,11 @@ function App() {
             <li className="cursor-pointer hover:underline">NRI</li>
             <li className="cursor-pointer hover:underline">About Us</li>
             <li className="cursor-pointer hover:underline">Support</li>
-            <li className="cursor-pointer hover:underline">Lodge a Complaint</li>
+            <li className="cursor-pointer hover:underline">
+              Lodge a Complaint
+            </li>
           </ul>
 
-          {/* Login / Signup */}
           <div className="flex items-center space-x-4">
             <div className="text-sm cursor-pointer hover:underline">
               English ⌄
