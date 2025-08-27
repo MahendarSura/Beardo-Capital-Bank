@@ -1,12 +1,18 @@
 import React from "react";
-import secretsImage from './images/secrets.png';
-import jandhanImage from './images/jandhan.png';
-import cashDepositImage from './images/cash-deposit.png';
-import stepsImage from './images/steps.png';
-import whichSavingsImage from './images/which-savings.png';
-import typesOfSavingsImage from './images/types-of-savings.png';
 
 function App() {
+  // Define image URLs using a placeholder service.
+  const creditCardTitanium = "https://placehold.co/400x250/F0F0F0/000000?text=Titanium+Card";
+  const creditCardPlatinum = "https://placehold.co/400x250/E5E5E5/000000?text=Platinum+Card";
+  const creditCardGold = "https://placehold.co/400x250/FFD700/000000?text=Gold+Card";
+  
+  const secretsImage = "https://placehold.co/400x250/C1E1C1/000000?text=Secrets+to+savings";
+  const jandhanImage = "https://placehold.co/400x250/C0C0C0/000000?text=Jan+Dhan+Yojana";
+  const cashDepositImage = "https://placehold.co/400x250/B0E0E6/000000?text=Cash+Deposit+Limit";
+  const stepsImage = "https://placehold.co/400x250/FFB6C1/000000?text=5+Steps+Online";
+  const whichSavingsImage = "https://placehold.co/400x250/DDA0DD/000000?text=Choose+Savings+Account";
+  const typesOfSavingsImage = "https://placehold.co/400x250/FFDAB9/000000?text=Types+of+Savings";
+
   return (
     <div className="max-w-full font-sans bg-white">
       {/* ===== TOP RED STRIP ===== */}
@@ -30,7 +36,7 @@ function App() {
 
           <div className="flex items-center space-x-4">
             <div className="text-sm cursor-pointer hover:underline">
-              English 
+              English
             </div>
             <button className="bg-white text-[#A60000] px-4 py-1 font-semibold rounded hover:bg-gray-100">
               Login / Signup
@@ -215,7 +221,7 @@ function App() {
             {/* Titanium */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=500&q=80"
+                src={creditCardTitanium}
                 alt="Titanium Card"
                 className="rounded mb-4"
               />
@@ -240,7 +246,7 @@ function App() {
             {/* Platinum */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src="https://images.unsplash.com/photo-1588776814546-ec07b7f82f92?auto=format&fit=crop&w=500&q=80"
+                src={creditCardPlatinum}
                 alt="Platinum Card"
                 className="rounded mb-4"
               />
@@ -265,7 +271,7 @@ function App() {
             {/* Gold */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src="https://images.unsplash.com/photo-1607082349566-187342fe2c2f?auto=format&fit=crop&w=500&q=80"
+                src={creditCardGold}
                 alt="Gold Card"
                 className="rounded mb-4"
               />
