@@ -24,7 +24,7 @@ function App() {
 
           <div className="flex items-center space-x-4">
             <div className="text-sm cursor-pointer hover:underline">
-              English 
+              English 
             </div>
             <button className="bg-white text-[#A60000] px-4 py-1 font-semibold rounded hover:bg-gray-100">
               Login / Signup
@@ -285,6 +285,115 @@ function App() {
           <p className="text-center mt-10 text-sm text-gray-600 cursor-pointer">
             EXPLORE ALL CREDIT CARDS | Looking for a Business card? VIEW
           </p>
+        </div>
+      </section>
+
+      {/* ===== BANKING TIPS SECTION ===== */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-[#fcf8f2] rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 shadow-md">
+            {[
+              {
+                title: "Secrets to boost your savings",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Secrets+to+savings",
+              },
+              {
+                title: "Guide to Jan Dhan Yojana Account",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Jan+Dhan+Yojana",
+              },
+              {
+                title: "Guide to the Cash Deposit Limit in a Savings Account",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Cash+Deposit+Limit",
+              },
+              {
+                title: "5 simple steps for opening a Savings Account online",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Open+Savings+Account",
+              },
+              {
+                title: "How to determine which Savings Account is right for you?",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Right+Savings+Account",
+              },
+              {
+                title: "Types of Savings Accounts: Know them all",
+                image: "https://placehold.co/500x300/e9d5a1/422006?text=Types+of+Savings",
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-lg shadow-lg">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="rounded-t-lg w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-semibold text-gray-800 text-lg">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <button className="bg-[#A60000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#8B0000] transition">
+              Load More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SMART FINANCIAL TOOLKIT SECTION ===== */}
+      <section className="bg-white py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">
+            Smart Financial Toolkit
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { text: "EMI Calculator", icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#eb008b]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8a2 2 0 110-4 2 2 0 010 4zm0 12a2 2 0 100 4 2 2 0 000-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 11l-4 4-4-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 11l4 4 4-4" />
+                </svg>
+              )},
+              { text: "SIP Calculator", icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#eb008b]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8a2 2 0 110-4 2 2 0 010 4zm0 12a2 2 0 100 4 2 2 0 000-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 9.5l-4-4-4 4" />
+                </svg>
+              )},
+              { text: "Credit Card EMI Calculator", icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#eb008b]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 10a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 16h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h4" />
+                </svg>
+              )},
+              { text: "Fixed Deposit Calculator", icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#eb008b]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8a2 2 0 110-4 2 2 0 010 4zm0 12a2 2 0 100 4 2 2 0 000-4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.5 13.5l-2.5 2.5-2.5-2.5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.5 13.5l2.5 2.5 2.5-2.5" />
+                </svg>
+              )},
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center justify-center p-6 bg-white border-2 border-gray-200 rounded-2xl shadow-md text-center"
+              >
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+                  {item.icon}
+                </div>
+                <p className="font-semibold text-gray-800">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <button className="bg-[#A60000] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#8B0000] transition">
+              View All
+            </button>
+          </div>
         </div>
       </section>
 
