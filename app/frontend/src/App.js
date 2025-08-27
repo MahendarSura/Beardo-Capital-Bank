@@ -1,4 +1,10 @@
 import React from "react";
+import secretsImage from './images/secrets.jpg';
+import jandhanImage from './images/jandhan.png';
+import cashDepositImage from './images/cash-deposit.jpg';
+import stepsImage from './images/steps.png';
+import whichSavingsImage from './images/which-savings.jpg';
+import typesOfSavingsImage from './images/types-of-savings.jpg';
 
 function App() {
   return (
@@ -295,27 +301,27 @@ function App() {
             {[
               {
                 title: "Secrets to boost your savings",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Secrets+to+savings",
+                image: secretsImage,
               },
               {
                 title: "Guide to Jan Dhan Yojana Account",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Jan+Dhan+Yojana",
+                image: jandhanImage,
               },
               {
                 title: "Guide to the Cash Deposit Limit in a Savings Account",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Cash+Deposit+Limit",
+                image: cashDepositImage,
               },
               {
                 title: "5 simple steps for opening a Savings Account online",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Open+Savings+Account",
+                image: stepsImage,
               },
               {
                 title: "How to determine which Savings Account is right for you?",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Right+Savings+Account",
+                image: whichSavingsImage,
               },
               {
                 title: "Types of Savings Accounts: Know them all",
-                image: "https://placehold.co/500x300/e9d5a1/422006?text=Types+of+Savings",
+                image: typesOfSavingsImage,
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-lg shadow-lg">
