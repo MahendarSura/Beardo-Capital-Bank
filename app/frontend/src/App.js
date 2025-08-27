@@ -1,27 +1,24 @@
 import React from "react";
+import secretsImage from './images/secrets.png';
+import jandhanImage from './images/jandhan.png';
+import cashDepositImage from './images/cash-deposit.png';
+import stepsImage from './images/steps.png';
+import whichSavingsImage from './images/which-savings.png';
+import typesOfSavingsImage from './images/types-of-savings.png';
+import titaniumCardImage from './images/titaniumCard.png';
+import platinumCardImage from './images/platinumCard.png';
+import goldCardImage from './images/goldCard.png';
 
 function App() {
-  // Define image URLs using a placeholder service.
-  const creditCardTitanium = "https://placehold.co/400x250/F0F0F0/000000?text=Titanium+Card";
-  const creditCardPlatinum = "https://placehold.co/400x250/E5E5E5/000000?text=Platinum+Card";
-  const creditCardGold = "https://placehold.co/400x250/FFD700/000000?text=Gold+Card";
-  
-  const secretsImage = "https://placehold.co/400x250/C1E1C1/000000?text=Secrets+to+savings";
-  const jandhanImage = "https://placehold.co/400x250/C0C0C0/000000?text=Jan+Dhan+Yojana";
-  const cashDepositImage = "https://placehold.co/400x250/B0E0E6/000000?text=Cash+Deposit+Limit";
-  const stepsImage = "https://placehold.co/400x250/FFB6C1/000000?text=5+Steps+Online";
-  const whichSavingsImage = "https://placehold.co/400x250/DDA0DD/000000?text=Choose+Savings+Account";
-  const typesOfSavingsImage = "https://placehold.co/400x250/FFDAB9/000000?text=Types+of+Savings";
-
   return (
     <div className="max-w-full font-sans bg-white">
-      {/* ===== TOP RED STRIP ===== */}
+
+      {/* ===== HEADER & NAV (SHORT) ===== */}
       <header className="bg-[#A60000] text-white w-full">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           <div className="text-xl md:text-2xl font-bold cursor-pointer">
             Beardo Capital Bank
           </div>
-
           <ul className="hidden md:flex space-x-6 font-medium text-sm">
             <li className="cursor-pointer hover:underline">Personal</li>
             <li className="cursor-pointer hover:underline">Business</li>
@@ -29,15 +26,10 @@ function App() {
             <li className="cursor-pointer hover:underline">NRI</li>
             <li className="cursor-pointer hover:underline">About Us</li>
             <li className="cursor-pointer hover:underline">Support</li>
-            <li className="cursor-pointer hover:underline">
-              Lodge a Complaint
-            </li>
+            <li className="cursor-pointer hover:underline">Lodge a Complaint</li>
           </ul>
-
           <div className="flex items-center space-x-4">
-            <div className="text-sm cursor-pointer hover:underline">
-              English
-            </div>
+            <div className="text-sm cursor-pointer hover:underline">English</div>
             <button className="bg-white text-[#A60000] px-4 py-1 font-semibold rounded hover:bg-gray-100">
               Login / Signup
             </button>
@@ -221,9 +213,9 @@ function App() {
             {/* Titanium */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src={creditCardTitanium}
+                src={titaniumCardImage}
                 alt="Titanium Card"
-                className="rounded mb-4"
+                className="rounded mb-4 w-full h-48 object-cover"
               />
               <h3 className="text-xl font-semibold">Titanium</h3>
               <p className="text-red-600 font-bold">Hot Selling</p>
@@ -234,21 +226,17 @@ function App() {
                 Lounge Access | Golf Rounds | BookMyShow Offers
               </p>
               <div className="flex gap-3 mt-4">
-                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">
-                  APPLY
-                </button>
-                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">
-                  DETAILS
-                </button>
+                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">APPLY</button>
+                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">DETAILS</button>
               </div>
             </div>
 
             {/* Platinum */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src={creditCardPlatinum}
+                src={platinumCardImage}
                 alt="Platinum Card"
-                className="rounded mb-4"
+                className="rounded mb-4 w-full h-48 object-cover"
               />
               <h3 className="text-xl font-semibold">Platinum</h3>
               <p className="text-red-600 font-bold">Exclusive Rewards</p>
@@ -259,21 +247,17 @@ function App() {
                 Welcome vouchers | Golf rounds | Lounge access
               </p>
               <div className="flex gap-3 mt-4">
-                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">
-                  APPLY
-                </button>
-                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">
-                  DETAILS
-                </button>
+                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">APPLY</button>
+                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">DETAILS</button>
               </div>
             </div>
 
             {/* Gold */}
             <div className="bg-white shadow-lg rounded-2xl p-6">
               <img
-                src={creditCardGold}
+                src={goldCardImage}
                 alt="Gold Card"
-                className="rounded mb-4"
+                className="rounded mb-4 w-full h-48 object-cover"
               />
               <h3 className="text-xl font-semibold">Gold</h3>
               <p className="text-red-600 font-bold">Popular</p>
@@ -284,12 +268,8 @@ function App() {
                 Lounge access | BookMyShow offers | INOX offers
               </p>
               <div className="flex gap-3 mt-4">
-                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">
-                  APPLY
-                </button>
-                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">
-                  DETAILS
-                </button>
+                <button className="bg-red-600 text-white px-4 py-2 rounded-lg">APPLY</button>
+                <button className="border border-red-600 text-red-600 px-4 py-2 rounded-lg">DETAILS</button>
               </div>
             </div>
           </div>
