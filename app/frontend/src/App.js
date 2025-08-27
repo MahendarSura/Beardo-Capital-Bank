@@ -24,7 +24,7 @@ function App() {
 
           <div className="flex items-center space-x-4">
             <div className="text-sm cursor-pointer hover:underline">
-              English ⌄
+              English 
             </div>
             <button className="bg-white text-[#A60000] px-4 py-1 font-semibold rounded hover:bg-gray-100">
               Login / Signup
