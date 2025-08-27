@@ -1,10 +1,10 @@
 import React from "react";
-import secretsImage from './images/secrets.jpg';
+import secretsImage from './images/secrets.png';
 import jandhanImage from './images/jandhan.png';
-import cashDepositImage from './images/cash-deposit.jpg';
+import cashDepositImage from './images/cash-deposit.png';
 import stepsImage from './images/steps.png';
-import whichSavingsImage from './images/which-savings.jpg';
-import typesOfSavingsImage from './images/types-of-savings.jpg';
+import whichSavingsImage from './images/which-savings.png';
+import typesOfSavingsImage from './images/types-of-savings.png';
 
 function App() {
   return (
